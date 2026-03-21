@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Futbol Local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header">TORNEO FUT-6</div>
+
+
+    <div class="container">
+
+        <div id="inicio" class="section">
+            <div class="card">
+                <div class="title">Buenos días "username"</div>App de torneo local
+            </div>
+        </div>
+
+        <div id="tabla" class="section hidden">
+            <div class="card">
+                <div class="title">Tabla de Posiciones</div>
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Equipo</th>
+                        <th>Pts</th>
+                        <th>J</th>
+                        <th>G</th>
+                        <th>E</th>
+                        <th>P</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="team"><img src="https://via.placeholder.com/25">Equipo 1</td>
+                        <td>67</td>
+                        <td>24</td>
+                        <td>22</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>200</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="team"><img src="https://via.placeholder.com/25">Equipo 2</td>
+                        <td>61</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>174</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="team"><img src="https://via.placeholder.com/25">Equipo 3</td>
+                        <td>70</td>
+                        <td>30</td>
+                        <td>19</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>142</td>
+                        <td>57</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="team"><img src="https://via.placeholder.com/25">Equipo 4</td>
+                        <td>104</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>207</td>
+                        <td>89</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="goleo" class="section hidden">
+            <div class="card">
+                <div class="title">Tabla de Goleo</div>
+                <table class="table">
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th>Goles</th>
+                    </tr>
+                    <tr>
+                        <td>Jugador 1</td>
+                        <td>Equipo 1</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Jugadoe 2</td>
+                        <td>Equipo 2</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>Jugador 3</td>
+                        <td>Equipo 1</td>
+                        <td>40</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="fases" class="section hidden">
+            <div class="card">
+                <div class="title">Fase Final</div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 1</div>
+                    <div class="score">8 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 4</div>
+                </div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 2</div>
+                    <div class="score">10 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equpo 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">Semi Final</div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 1</div>
+                    <div class="score">8 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 4</div>
+                </div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 2</div>
+                    <div class="score">10 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equpo 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">Cuartos De Final</div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 1</div>
+                    <div class="score">8 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 4</div>
+                </div>
+                <div class="match">
+                    <div class="team"><img src="https://via.placeholder.com/25">Equipo 2</div>
+                    <div class="score">10 - 3</div>
+                    <div class="team"><img src="https://via.placeholder.com/25">Equpo 3</div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="tab active" onclick="showTab('inicio',this)">🏠 Inicio</div>
+        <div class="tab" onclick="showTab('tabla',this)">📊 Tabla</div>
+        <div class="tab" onclick="showTab('goleo',this)">⚽ Goleo</div>
+        <div class="tab" onclick="showTab('fases',this)">🏆 Fases</div>
+    </div>
+
+    <script>
+        function showTab(id, el) {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+
+            let tabs = document.querySelectorAll('.tab');
+            tabs.forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
