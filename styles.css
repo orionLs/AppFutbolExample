@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #f2f2f2;
+    background: #dfdfdf;
 }
 
 .header {
-    background: #32034d;
+    background: #cf7c00;
     color: white;
     padding: 15px;
     text-align: center;
@@ -19,8 +19,8 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    background: #fff3e6;
-    color: #32034d;
+    background: #ffffff;
+    color: #000000;
     padding: 8px 12px;
     border-radius: 20px;
     white-space: nowrap;
@@ -29,7 +29,7 @@ body {
 }
 
 .tab.active {
-    background: white;
+    background: #ffe7c2;
     font-weight: bold;
 }
 
@@ -96,8 +96,8 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: white;
-    border-top: 1px solid #ddd;
+    background: #cf7c00;
+    border-top: 1px solid #cf7c00;
     display: flex;
     justify-content: space-around;
     padding: 8px 0;
@@ -109,7 +109,7 @@ body {
 }
 
 .icon.active {
-    color: #32034d;
+    color: #cf7c00;
 }
 
 .hidden {
@@ -131,6 +131,6 @@ body {
 }
 
 .subtab.active {
-    background: #32034d;
+    background: #cf7c00;
     color: white;
 }
