@@ -109,9 +109,28 @@ body {
 }
 
 .icon.active {
-    color: #ff7a00;
+    color: #32034d;
 }
 
 .hidden {
     display: none;
+}
+
+.subtabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.subtab {
+    padding: 6px 10px;
+    background: #eee;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.subtab.active {
+    background: #32034d;
+    color: white;
 }
